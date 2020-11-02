@@ -1,6 +1,6 @@
 ## Tennis scheduling problem
 
-Six friends share a winter tennis contract that allows any four of them them to play each Saturday morning for 30 weeks
+Six friends share a winter indoor tennis contract that allows any four of them to play each Saturday morning for 30 weeks
 ```
 NUM_WEEKS=30
 GROUP_SIZE=6
@@ -10,7 +10,7 @@ NUM_PLAYERS_ON_COURT=4
 Make a fair schedule such that
 1. Every combination of 4 players is represented evenly
 1. Everyone plays the same number of times
-1. No one sits out on consecutive days.
+1. No one sits out on consecutive weeks.
 
 ## Notes
 1. The first condition can be met by enumerating all combinations of 4 people (6C4 = 15) and repeating them twice. If the number of weeks is not a multiple of 15, some combinations will occur 1 more time than the rest, but that cannot be helped.
