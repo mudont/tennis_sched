@@ -38,9 +38,12 @@ d += t
 # print(f"{d:%Y/%m/%d}")
 dates = [d+timedelta(i*7) for i in range(NUM_WEEKS)]
 dates
+#%%
+byes = sorted([sorted(l) for l in it.combinations(PLAYERS, 2)])
+byes
 
 #%%
-tentative_schedule = [sorted(l) for l in it.combinations(PLAYERS, 4)]
+tentative_schedule = [set(l) for l in it.combinations(PLAYERS, 4)]
 print("Order:")
 print_sched(tentative_schedule)
 n_cycles = round(NUM_WEEKS / len(tentative_schedule) + 0.5)
